@@ -26,9 +26,7 @@ body {
 header {
   width: 100%;
   background: #00000085;
-  position: absolute;
-  z-index: 99;
-  backdrop-filter: blur(5px);
+  padding: 10px 0px;
 }
 
 .res_select {
@@ -89,7 +87,6 @@ nav.navigation_bar {
   margin: 10px auto;
   border-top: 1px solid #fff;
   padding: 12px 0px;
-  position: relative;
 }
 
 .logo {
@@ -162,9 +159,13 @@ ul.nav_items {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
-
+button.Res-Button {
+  font-size: 24px;
+  background: transparent;
+  border: transparent;
+  color: #ffff;
+}
 .img_txt {
   width: 100%;
   text-align: center;
@@ -172,7 +173,7 @@ ul.nav_items {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0px;
+  padding: 150px 0px;
 }
 
 .img_txt figure {
@@ -194,6 +195,7 @@ ul.nav_items {
 .img_txt p {
   color: #fff;
   display: flex;
+  font-size: 14px;
   justify-content: center;
   align-items: center;
   width: 50%;
@@ -1029,12 +1031,8 @@ li.icon_footer figure a:hover {
 @media (max-width: 1092px) {
   .img_txt p {
     width: 80%;
+    margin: 0 auto;
   }
-
-  .img_txt {
-    padding: 150px 0px;
-  }
-
   .logo figure {
     width: 150px;
   }
@@ -1136,27 +1134,33 @@ li.icon_footer figure a:hover {
     width: 40px;
     float: right;
   }
-
+  body {
+    position: relative;
+  }
   .res_select figure i {
     font-size: 24px;
     color: #fff;
     padding-left: 10px;
     margin: 0;
   }
-
   ul.nav_items {
     display: none;
     position: absolute;
-    top: 83px;
+    top: 0;
     right: 0;
     left: 0;
     width: 100%;
     flex-direction: column;
     z-index: 99;
-    background: #00000085;
+    background: #000000b8;
+    border-radius: 0px 0px 20px 20px;
+    padding: 150px 0px;
   }
   li.items {
     margin: 30px 0px;
+  }
+  .res_select {
+    z-index: 99;
   }
   .logo {
     width: 50%;
@@ -1174,6 +1178,7 @@ li.icon_footer figure a:hover {
     align-items: flex-end;
     margin: 0 auto;
     padding: 0;
+    z-index: 99999;
   }
 
   select {
